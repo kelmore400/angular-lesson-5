@@ -1,0 +1,8 @@
+<button (click)="addDiscount()">Хочу скидку</button>
+<div class="container">
+  <div *ngFor="let item of products" class="product">
+    <app-card-block #item [product]='item' [discount]="withDiscount ? discount : 0" (showDesc)="fHandler(item.id)">
+      <b> {{ item.color }} </b>
+    </app-card-block>
+  </div>
+</div>

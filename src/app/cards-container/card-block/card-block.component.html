@@ -1,0 +1,7 @@
+<div class="card">
+  <h2>{{product.name}}</h2>
+  <p>{{product.price * (1-discount)}}</p>
+  <button (click)="showDescription(product.id)">Ознакомиться</button>
+  <div *ngIf="product.isShow">{{product.description}}</div>
+  <ng-content></ng-content>
+</div>

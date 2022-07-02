@@ -1,0 +1,6 @@
+<b><p>Задание 4 с input</p></b>
+<app-list-item *ngFor="let item of items" [text]="item"></app-list-item>
+<b><p>Задание 4 с ng-content</p></b>
+<app-list-item-content *ngFor="let item of items">
+  <p>{{item}}</p>
+</app-list-item-content>
